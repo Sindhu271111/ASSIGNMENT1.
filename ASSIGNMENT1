@@ -1,0 +1,92 @@
+1.(i)my_string = "Hello, Learners!"     print(my_string)
+1.(ii)  fruits = ["apple", "banana", "cherry", "date"]
+          print(fruits)
+1.(iii) pi_value = 3.14159
+        print(pi_value)
+1.(iv)my_tuple = (1, "apple", 3.14)
+       print(my_tuple)
+
+2.(i)String
+2.(ii)String
+2.(iii)List
+2.(iv)Float
+
+
+3.(i) Divison operator, Path Seperators
+3.(ii)find remainder after divison
+3.(iii)floor divison
+3.(iv)Exponentiation
+
+4.my_list = [42, "Sindhu", 3.14, True, [1, 2, 3], {"key": "value"}, None, (10, 20), 5 + 6j, "world"]
+
+for item in my_list:
+    print("Element:", item)
+    print("Data Type:", type(item))
+    print("=" * 20)  
+    
+5.  A = int(input("Enter the dividend (number A): "))
+B = int(input("Enter the divisor (number B): "))
+
+if B == 0:
+    print("Cannot divide by zero.")
+else:
+    count = 0
+    while A >= B:
+        A -= B
+        count += 1
+
+    if count > 0:
+        print(f"{B} is a divisor of {A} and it can be divided {count} times.")
+    else:
+        print(f"{B} is not a divisor of {A}.")
+
+        
+6.  
+        
+int_list = [12, 7, 18, 5, 9, 21, 16, 27, 30, 8, 4, 33, 14, 22, 6, 11, 25, 2, 36, 15, 10, 13, 3, 20, 17]
+
+
+for num in int_list:
+    if num % 3 == 0:
+        print(f"{num} is divisible by 3")
+    else:
+        print(f"{num} is not divisible by 3")
+
+        
+7.     Mutable and immutable are terms used to describe the behavior of data types in programming languages.
+
+Immutable Data Types:
+
+Immutable data types are those whose values cannot be changed after they are created. When We modify an immutable object, we actually create a new object in memory. In other words, the original object's value remains unchanged, and any modification results in the creation of a new object with the updated value.
+
+Examples of immutable data types in Python include:
+
+Integers (int): Once an integer is created, its value cannot be changed.      
+     x = 5
+y = x
+x = x + 1  
+
+Strings (str): Strings cannot be modified directly. Any modification creates a new string
+
+text = "Sindhu"
+new_text = text + "Shekhar"  
+
+
+
+Mutable data types are those whose values can be changed after they are created. When we modify a mutable object, we are directly modifying the same object's value in memory.
+
+Examples of mutable data types in Python include:
+
+Lists (list): Lists can be modified by adding, removing, or changing elements.
+
+my_list = [1, 2, 3]
+my_list.append(4)    
+my_list[0] = 100     
+
+Dictionaries (dict): Dictionary values can be changed by modifying or adding key-value pairs.
+
+my_dict = {"name": "Sindhu", "age": 30}
+my_dict["age"] = 31   
+my_dict["city"] = "Delhi"  
+
+
